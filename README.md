@@ -1,1 +1,1 @@
-# Web
+Web pertama saya bang, kasih kritik dan saran dong...semoga bisa konsisten ngoding
