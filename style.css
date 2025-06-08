@@ -1,0 +1,268 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: 'smooth';
+}
+
+body {
+  font-family: 'Inter', Helvetica, Sans-Serif;
+  background-color: #fffaf5;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', Sans-Serif;
+  font-weight: 700;
+}
+
+header {
+  background-color: #ffb580;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-right li a,
+.nav-left li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-right li a:hover,
+.nav-left li a:hover {
+  color: #333;
+  border-bottom: 2px solid white;
+}
+
+.nav-right li a{
+  padding: 7px;
+}
+
+main div {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main h1 {
+  color: #ff7f50;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  background-color: #ffe5d0;
+  margin-bottom: 40px;
+}
+
+.home img {
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 4px solid #fff0e6;
+  margin-bottom: 20px;
+  width: 50%;
+  max-width: 180px;
+}
+
+.btn {
+  background-color: #ff7f50;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff9566;
+}
+
+/* About */
+.about {
+  background-color: #fff0e6;
+  border-radius: 12px;
+  padding: 40px 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  text-align: justify;
+}
+
+.about h2 {
+  text-align: center;
+  font-family: 'Poppins', Sans-Serif;
+  font-size: 1.8rem;
+  color: #ff7f50;
+  margin-bottom: 20px;
+}
+
+/* Project */
+.project {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fffaf5;
+}
+
+.project h2 {
+  font-family: 'Poppins', Sans-Serif;
+  color: #ff7f50;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.v-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.v-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.v-card strong {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.v-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Skills */
+.skills {
+  padding: 60px 20px;
+  background-color: #fff0e6;
+  text-align: center;
+}
+.skills h2 {
+  font-family: 'Poppins', sans-serif;
+  color: #ff7f50;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills li {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 20px;
+  text-align: left;
+}
+
+.skills li strong {
+  display: block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skills ul {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills li {
+  width: 250px;
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  background-color: #ffe5d0; /* pastel peach */
+  text-align: center;
+}
+.contact h1 {
+  font-family: 'Poppins', sans-serif;
+  color: #ff7f50;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.contact a {
+  display: inline-block;
+  margin: 0 15px;
+  color: #333;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact a:hover {
+  color: #ff7f50;
+  transform: scale(1.2);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffb580;
+  color: white;
+  font-size: 0.9rem;
+}
